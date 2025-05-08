@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"files.associations": {
+			"raylib.h": "c",
+			"math.h": "c",
+			"blocks.h": "c",
+			"stdio.h": "c",
+			"*.m": "c",
+			"chrono": "c",
+			"bitset": "c",
+			"set": "c"
+		},
+		"makefile.launchConfigurations": [
+			{
+				"cwd": "d:\\VSCode",
+				"binaryPath": "d:\\VSCode\\game",
+				"binaryArgs": []
+			}
+		]
+	}
+}
