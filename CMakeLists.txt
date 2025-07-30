@@ -16,4 +16,14 @@ FetchContent_Declare(
 set(BUILD_EXAMPLES OFF CACHE BOOL "" FORCE)
 FetchContent_MakeAvailable(raylib)
 
-target_link_libraries(minesweeper raylib winmm gdi32)
+target_link_libraries(minesweeper raylib)
+
+if (WIN32)
+    target_link_libraries(minesweeper winmm gdi32)
+elseif(APPLE)
+    target_link_libraries(minesweeper
+        "-framework IOKit"
+        "-framework Cocoa"
+        "-framework OpenGL"
+    )
+endif()
